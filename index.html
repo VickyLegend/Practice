@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav-background">
+        <div class="navbar">
+          <div class="icon">
+            <h2 class="logo">S M A T O</h2>
+          </div>
+
+          <div class="menu">
+            <ul>
+              <li><a href="About Us.html">AboutUs</a></li>
+              <li><a href="Services.html" target="_blank">Services</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="#">Enquires</a></li>
+              <li><a href="#" target="_blank">Download</a></li>
+              <li><a href="Login form.html" target="_blank">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="search">
+        <input class="srch" type="search" name="" placeholder="type to text" />
+        <a href="#"> <button class="btn">Search</button></a>
+      </div>
+
+      <div>
+        <div class="content">
+          <h1>Smato Global Resources</h1>
+          <br />
+          <p class="par">
+            Hi there, Looking broke. Let me introduce you to SMATO GLOBAL
+            RESOURCES. <br />
+            We deal in logistics,Movement of equipment's, Uber driving and so
+            much much. <br />Contacts us at 08035760275 or 09093889143.OR you
+            can visit our website at <br />
+            <br /><a href="#">smatoglobalreasources.com</a>
+          </p>
+
+          <button class="cn">
+            <a
+              href="C:\Users\Programmer\Desktop\Codes\House Of Desiny\registration form.html"
+              >Join Us</a
+            >
+          </button>
+        </div>
+      </div>
+
+      <div id="login-form" class="Login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-button" onclick="Login()">
+              Log in
+            </button>
+            <button type="button" class="toggle-button" onclick="Register()">
+              Register
+            </button>
+          </div>
+
+          <div class="social-icons">
+            <a href="http://www.facebook.com/israelmomolade" target="_blank"
+              ><ion-icon name="logo-facbook"></ion-icon
+            ></a>
+            <a href="#" target="_blank"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+            <a href="https://wa.me/+2348091626180" target="_blank"
+              ><ion-icon name="logo-whatsapp"></ion-icon
+            ></a>
+            <a href="#" target="_blank"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="#" target="_blank" action="mailto: somimec2006@gmail.com"
+              ><ion-icon name="logo-gmail"></ion-icon
+            ></a>
+          </div>
+
+          <form id="Login" class="input-group-login">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="User id"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >Remember Password</span
+            >
+            <button type="submit" class="submit-btn">Log in</button>
+          </form>
+
+          <form id="Register" class="input-group-register">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="User id"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email Id"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="phone number"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="comfirm password"
+              required
+            />
+            <input type="checkbox" class="check-box" required /><span
+              >I agree to the terms and conditions</span
+            >
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+      var x = document.getElementById("Login");
+      var y = document.getElementById("Register");
+      var z = document.getElementById("btn");
+
+      function Register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+
+      function Login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+    <script>
+      var modal = document.getElementById("login-form");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
